@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+.container{
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+.login{
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.login a{
+    width: 200px;
+    padding: 10px 60px;
+    border-radius: 8px;
+    background-color: rgb(61, 163, 197);
+    color: white;
+}
+.login a:hover{
+    background-color: white;
+    color: rgb(61, 163, 197);
+    border: 1px solid lightgray;
+}
+.reg a{
+    width: 200px;
+    padding: 10px 50px;
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(61, 163, 197);
+    border: 1px solid lightgray;
+}
+.reg a:hover{
+    background-color: rgb(61, 163, 197);
+    color: white;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+.users-area{
+    width: 27%;
+    background-color: white;
+    overflow-y: auto;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 15px 15px 10px 10px;
+}
+.users-area .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.users-area img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.profile .details{
+    display: flex;
+}
+.details .names{
+    margin-top: 6px;
+}
+.details h2{
+    font-size: 16px;
+}
+.details p{
+    font-size: 13px;
+}
+.profile button{
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(61, 163, 197);
+    color: white;
+}
+.profile button:hover{
+    background-color: rgb(10, 101, 131);
+}
+.users-area hr{
+    height: 1px;
+    margin-bottom:5px;
+}
+.users-area input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid lightgray;
+    outline: none;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    transform: translateX(5%);
+}
+.users .single{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.users .single:hover{
+    background-color: rgb(231, 230, 230);
+    border-radius: 7px;
+}
+.users img{
+    width: 45px;
+    height: 45px;
+}
+.users .single h2{
+    font-size: 15px;
+}
+.users .single p{
+    font-size: 13px;
+}
+.chat-area{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 75%;
+    background-color: rgb(243, 242, 242);
+    padding: 0px 0px 10px 0px;
+    height: 100%;
+}
+.chat-area .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    background-color: rgb(61, 163, 197);
+}
+.top .names{
+    margin-left: 8px;
+}
+.top h2{
+    font-size: 15px;
+    color: white;
+}
+.top p{
+    font-size: 12px;
+    color: white;
+}
+.chat-area .chats{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    overflow-y: auto;
+}
+.chat-area .chats::-webkit-scrollbar{
+    display: none;
+}
+.top img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.top .back{
+    display: none;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: transparent;
+}
+.back i{
+    font-size: 15px;
+    text-align: center;
+}
+.chats .sent{
+    display: flex;
+    max-width: 50%;
+    background-color:rgb(61, 163, 197);
+    padding: 10px 5px;
+    border-radius: 8px 0 8px 8px;
+    align-self: flex-end;
+    margin-bottom: 13px;
+}
+.chats .received{
+    max-width: 50%;
+    align-self: flex-start;
+    background-color: white;
+    padding: 10px 5px;
+    margin-bottom: 13px;
+    border-radius: 0 8px 8px 8px;
+}
+.sent p{
+    text-align: end;
+    color: white;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+.received p{
+    font-size: 15px;
+    word-wrap: break-word;
+}
+.chat-area .actions{
+    flex-basis: 5%;
+}
+.actions{
+    width: 100%;
+}
+.actions form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.actions input{
+    width: 90%;
+    height: 45px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    font-size: 16px;
+    color: black;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.actions button{
+    width: 5%;
+    height: 45px;
+    cursor: pointer;
+    background-color: rgb(61, 163, 197);
+    border: none;
+    outline: none;
+    border-radius: 0 6px 6px 0;
+}
+.actions button i{
+    color: white;
+    font-size: 18px;
+}
+.chat-area .cover{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.cover .landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.landing img{
+    width: 100px;
+    height: 100px;
+    background-color: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.landing span{
+    font-style: italic;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.chat-area .active {
+    display: none;
+}
+.main .last{
+    display: none;
+}
